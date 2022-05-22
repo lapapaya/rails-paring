@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the papaya pairing exercise.
 
-Things you may want to cover:
+It is a rails API only service.
 
-* Ruby version
+To get started you need Ruby, Rails and Postgres.
 
-* System dependencies
+To install postgres you can you this to make it easier.
+https://postgresapp.com/
 
-* Configuration
 
-* Database creation
+Once postgres is up and running locally you can create your database with
 
-* Database initialization
+`rake db:create`
 
-* How to run the test suite
+run the migrations
 
-* Services (job queues, cache servers, search engines, etc.)
+`rake db:migrate`
 
-* Deployment instructions
+and seed the DB
 
-* ...
+`rake db:seed`
+
+You should be ready to roll if you can see 50 vehicles when running rails console.
